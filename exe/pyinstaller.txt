@@ -1,0 +1,18 @@
+Create a Standalone Executable on Windows
+1. Use pyinstaller
+pyinstaller is a popular tool to bundle Python programs into standalone executables.
+
+Install pyinstaller
+bash
+Copy code
+pip install pyinstaller
+Generate the Executable
+Run the following command in the terminal from the directory containing your main script (e.g., main.py):
+
+bash
+Copy code
+pyinstaller --onefile --name CheatsheetBuilder main.py
+--onefile: Bundles everything into a single executable.
+--name: Sets the name of the output file.
+main.py: The entry point of your program.
+After running this, you’ll find the executable in the dist folder.
