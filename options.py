@@ -34,7 +34,7 @@ def cheatsheet_menu(title, section, notes, file_name, parent_section=None, bread
         clear_screen()
 
         # Display the cheatsheet name and breadcrumb navigation
-        print(f"Cheatsheet: {cheatsheet_name}\n")
+        print(f"\nCheatsheet: {cheatsheet_name}\n")
         print(f"{' > '.join(breadcrumb)}\n")
 
         # Fetch notes and apply ordering if needed

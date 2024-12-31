@@ -14,7 +14,9 @@ def main_menu():
         print("1. New Cheatsheet")
         print("2. Load Cheatsheet")
         print("3. Export Cheatsheet")
-        print("4. Exit")
+        if selected_file:
+            print("4. Reopen Current Cheatsheet")
+        print("0. Exit")
         print()
 
         # Display the currently loaded cheatsheet if available
@@ -47,7 +49,6 @@ def main_menu():
             input("Press Enter to continue...")
             cheatsheet_menu("Cheatsheet", notes["r_cheatsheet"], notes, selected_file)
 
-
         elif choice == "3":  # Export Notes
             if notes is None or selected_file is None:
                 print("No cheatsheet loaded. Please create or load a cheatsheet first.")
@@ -55,7 +56,12 @@ def main_menu():
                 continue
             export_notes(notes, selected_file)
 
-        elif choice == "4":  # Exit
+        elif choice == "4" and selected_file:  # Reopen Current Cheatsheet
+            print(f"Reopening cheatsheet '{selected_file}'.")
+            input("Press Enter to continue...")
+            cheatsheet_menu("Cheatsheet", notes["r_cheatsheet"], notes, selected_file)
+
+        elif choice == "0":  # Exit
             print("Exiting the program. Goodbye!")
             break
 
