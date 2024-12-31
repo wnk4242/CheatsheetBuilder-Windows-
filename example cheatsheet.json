@@ -8,7 +8,9 @@
                         "notes": [],
                         "submenus": {
                             "first_subsubfolder": {
-                                "notes": [],
+                                "notes": [
+                                    "Ah, you found me using Search Notes."
+                                ],
                                 "submenus": {}
                             }
                         }

@@ -1,6 +1,9 @@
-def export_notes(notes):
+def export_notes(notes, cheatsheet_file):
     """Export all notes to a text file."""
-    with open("notes.txt", "w") as file:
+    # Derive the export file name from the cheatsheet file name
+    export_file = cheatsheet_file.replace(".json", ".txt")
+
+    with open(export_file, "w") as file:
         def export_section(file, section, prefix=""):
             for note in section.get("notes", []):
                 file.write(f"{prefix}- {note}\n")
@@ -8,5 +11,5 @@ def export_notes(notes):
                 file.write(f"{prefix}{folder.replace('_', ' ').title()}:\n")
                 export_section(file, content, prefix + "  ")
         export_section(file, notes["r_cheatsheet"])
-    print("Notes exported successfully to notes.txt.")
+    print(f"Cheatsheet exported successfully to {export_file}.")
     input("Press Enter to continue...")

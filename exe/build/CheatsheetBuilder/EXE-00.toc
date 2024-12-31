@@ -92,7 +92,7 @@
  [],
  False,
  False,
- 1735583151,
+ 1735621503,
  [('run.exe',
    'D:\\wnk\\pythonprojects\\AWSTest\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
