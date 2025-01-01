@@ -52,6 +52,3 @@ def save_notes(notes, file_name=None):
     with open(file_name, "w") as file:
         json.dump(notes, file, indent=4)
 
-def list_json_files():
-    """List all available JSON files in the current directory."""
-    return [f for f in os.listdir() if f.endswith(".json")]
