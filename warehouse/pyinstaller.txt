@@ -1,0 +1,5 @@
+To wrap up the python program into a standalone exe file in a Windows system, type the following commands in the Terminal:
+
+pip install pyinstaller
+
+pyinstaller --onefile --name CheatsheetBuilder main.py
