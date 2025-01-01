@@ -1,5 +1,15 @@
-To wrap up the python program into a standalone exe file in a Windows system, type the following commands in the Terminal:
+Use pyinstaller to create a standalone executable on a Window system
 
+pyinstaller is a popular tool to bundle Python programs into standalone executables.
+
+Generate the Executable
+Run the following command in the terminal from the directory containing your main script:
+-------
 pip install pyinstaller
 
 pyinstaller --onefile --name CheatsheetBuilder main.py
+-------
+--onefile: Bundles everything into a single executable.
+--name: Sets the name of the output file.
+main.py: The entry point of your program.
+After running this, you’ll find the executable in the dist folder.
