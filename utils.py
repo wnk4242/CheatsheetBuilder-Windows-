@@ -20,18 +20,20 @@ def choose_notes_file():
         print("No JSON files found in the current directory.")
         input("Press Enter to continue...")
         return None
-
     print("\nAvailable JSON files:")
     for i, file in enumerate(files, 1):
         print(f"{i}. {file}")
-
-    choice = input("\nEnter the number of the file you want to load: ").strip()
-    if choice.isdigit() and 1 <= int(choice) <= len(files):
-        return files[int(choice) - 1]
-    else:
-        print("Invalid choice. Returning to the main menu.")
-        input("Press Enter to continue...")
+    choice = input("\nEnter the number of the file you want to load (or press Enter to cancel): ").strip()
+    # Handle the case where the user presses Enter to cancel
+    if not choice:
         return None
+    # Handle invalid input
+    if not (choice.isdigit() and 1 <= int(choice) <= len(files)):
+        print("Invalid choice. Please enter a valid number to select a cheatsheet.")
+        return None
+    # Valid choice
+    return files[int(choice) - 1]
+
 
 
 def load_notes(file_name=None):
