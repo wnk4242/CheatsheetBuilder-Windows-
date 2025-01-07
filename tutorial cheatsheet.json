@@ -3,8 +3,7 @@
         "submenus": {
             "first_folder": {
                 "notes": [
-                    "Press f to move a note out of a folder.",
-                    "Press n to move the Second Folder out."
+                    "Press f to move this note out of this folder."
                 ],
                 "submenus": {}
             },
@@ -13,16 +12,17 @@
                     "Press d to delete me."
                 ],
                 "submenus": {
-                    "open_this_folder": {
+                    "subfolder": {
                         "notes": [
-                            "Great job! You found me using the search function!"
+                            "Press l to delete the \"subsubfolder 1\".",
+                            "Press n to move the \"subsubfolder 2\" out of this folder."
                         ],
                         "submenus": {
-                            "press_l_to_delete_this_folder": {
+                            "subsubfolder_1": {
                                 "notes": [],
                                 "submenus": {}
                             },
-                            "press_n_to_move_this_folder_out": {
+                            "subsubfolder_2": {
                                 "notes": [],
                                 "submenus": {}
                             }
