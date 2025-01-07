@@ -1,6 +1,6 @@
 from utils import clear_screen, load_notes, save_notes, choose_notes_file
 from options import cheatsheet_menu
-from export import export_notes
+from notes_operations import export_notes
 
 def main_menu():
     """Display the main menu and handle user input."""
