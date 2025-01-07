@@ -35,7 +35,12 @@ Export your entire cheatsheet into a clean and readable text file, ideal for sha
 ## How to Use
 
 ### Step 1: Start the Program
-Run the program by executing `main.py`. The main menu will greet you with several options:
+There are three ways to run the program:
+1. In Python: Run `main.py`.
+2. Use the `.bat` file for Windows users.
+3. Use the executable file located in the `dist` folder under the `exe` folder.
+
+The main menu will greet you with several options:
 1. Create a new cheatsheet.
 2. Load an existing cheatsheet.
 3. Export a cheatsheet to a text file.
