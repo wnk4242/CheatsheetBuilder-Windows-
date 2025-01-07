@@ -50,7 +50,7 @@ def cheatsheet_menu(title, section, notes, file_name, parent_section=None, bread
             current_notes = notes_list[start_idx:end_idx]
 
             # Apply truncation if enabled
-            truncation_length = 20  # Set globally for easier adjustments
+            truncation_length = 40  # Set globally for easier adjustments
             if truncated_display:
                 current_notes = [
                     (note[:truncation_length] + "...") if len(note) > truncation_length else note for note in current_notes
