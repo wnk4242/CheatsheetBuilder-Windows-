@@ -1,1 +1,0 @@
-Don't name a directory with "Windows" in it. It will cause error in the Terminal.
